@@ -32,7 +32,7 @@
         bottom: 0;
         width: 100%;
         font-size: 12px;
-        position:fixed;
+        position:relative;
         border-left:#556b2f 4px solid;
         
     }
@@ -72,12 +72,20 @@
         transition: border-color 0.3s, box-shadow 0.3s;
     }
 
+    /* Efeito de foco nos campos */
+    #formulario-contato input:focus,
+    #formulario-contato textarea:focus,
+    #formulario-contato button:focus,
+    a:focus {
+        outline:2px solid #3b4d3f; 
+    }
+
 
     /* Botão de envio */
     #formulario-contato button {
         margin-top: 25px;
         padding: 12px;
-        background-color: #3b4d3f; 
+        background-color:#3b4d3f; 
         color: white;
         border: none;
         border-radius: 4px;
@@ -102,6 +110,7 @@
         font-weight: bold;
         font-size: 16px;
         transition: color 1s;
+        
     }
 
     nav a:hover {
@@ -138,7 +147,7 @@
 
     p {
         font-size: 16px;
-        font-family: arial;
+        font-family: sans-serif;
         line-height: 1.6;
         margin-bottom: 20px;
 
